@@ -1,0 +1,375 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Datos del alumnoo</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app4.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JavaScript-->
+	<script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/acciones.js" type="text/javascript"></script>
+
+	<script src="phonegap.js"></script><!-- necesario*/-->
+    
+    <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head><body onLoad="MM_preloadImages('imagenes/super.jpg','imagenes/triangulo.jpg')">
+
+ <div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Menu de inicio</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+<h1>Musica </h1>
+     <div>
+       <font face="Comic Sans MS, cursive"><p>Musica para pasar el rato</p></font>
+      <br>
+     </div>
+     <div>
+      <audio src="audio/You Are Not Alone.mp3"controls type="audio/mpeg" preload="preload"></audio>
+      <br>
+      <img src="imagenes/musica.jpg" width="50%" height="50%"> 
+       </div>
+       </div>
+       </div>
+       <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+<h1>Enlace </h1>
+     <div>
+       <font face="Comic Sans MS, cursive"><p>Enlace de un video</p></font>
+      <br>
+     </div>
+     <div>
+   <a href="https://www.youtube.com/watch?v=bR2X6sqsAiY" target="_self">    
+      <img src="imagenes/youtube.jpg" width="50%" height="50%"></a>
+       </div>
+       </div>
+       </div>
+       <div>
+       <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+       <li class="ui-first-child ui-last-child">
+        <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>  Definición</h2>
+         <p>¿Que es la contaminacion hambiental?</p>
+         </a>
+         </li>
+         <li class="ui-first-child ui-last-child">
+          <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>  Tipos de contaminación</h2>
+           <p>¿Cuantos tipos hay?</p>
+           </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+           <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2> Consecuencias</h2>
+             <p>¿Cuales son sus consecuencias?</p>
+           </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+           <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2> Reciclaje</h2>
+           <p>¿Que es?</p>
+           </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+           <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>  5 Medidas que puedes emplear para combatir la contaminación en tu comunidad</h2>
+              <p>Medidas para convatirla</p>
+           </a>
+           </li>
+           </ul>
+           </div>
+           <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+           <div>
+           <img src="imagenes/Earth-icon.png" width="46" height="46">
+           </div>
+           <div>
+           <h4>Aplicacion 4,JDCP</h4>
+           </div>
+           </div>
+           </div>
+           <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+           <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1> Definición</h1>
+           </div>
+           <div data-role="content" align="center">
+           <div>
+          <font size="+2" face="Verdana, Geneva, sans-serif" color="#FF0000">
+           Se entiende por <b>contaminación ambiental</b> la incorporación al medio ambiente de <b>agentes nocivos</b><br>
+           en cualquier estado y de origen tanto biológico, <b>como físico y químico</b> peligrosos para la salud<br>
+           de los seres humanos, animales y plantas.<br>
+           Mientras que la<b> vida animal y vegetal</b> se ha adaptado siempre perfectamente al ecosistema, <b>la evolución<br>
+           humana</b> en aras del progreso continuo ha adaptado el medio ambiente a sus intereses<b> modificándolo</b> para<br>
+           acomodarlo a sus necesidades con un <b>impacto negativo</b> que se ha venido acelerando geométricamente desde<br>
+           la revolución industrial.<br>
+           Desde hace algunas décadas, las consecuencias del<b> impacto medio ambiental</b> producido por la población<br>
+           mundial y la industria, está concienciando a los gobiernos de muchos países sobre la necesidad de<br>
+           adoptar<b> medidas eficaces para frenar y reducir</b> un desequilibrio de proporciones catastróficas,<br>
+           con campañas dirigidas a la población, y medidas específicas dirigidas al sector productivo.
+           </font>
+           <br>
+           <br>
+           <img src="imagenes/tierra chan.jpg" width="50%" height="50%">
+           </div>
+           </div>
+           <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+           <div>
+           <img src="imagenes/Earth-icon.png" width="46" height="46">
+           </div>
+           <h4>Aplicacion 4,JDCP</h4>
+           </div>
+           </div>
+           
+          
+          <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>Tipos de contaminación</h1>
+          </div>
+          <div data-role="content" align="center">
+          <div>
+           <font color="#FF0000" size="+3">
+         <ol type="I">
+         <li>
+          Contaminación atmosférica
+         </li>
+           <font color="#FFFF00" size="+2">
+          Surge de la liberación de partículas de sustancias químicas a la atmósfera. 
+         </font>
+          <li>
+          Contaminación hídrica
+          </li>
+            <font color="#FFFF00" size="+2">
+         Se trata del efecto de la emisión y liberación en las aguas de sustancias contaminantes. Se dificulta o altera la vida y el uso normativo, haciéndola no potable. 
+         </font>
+           <li>
+           Contaminación del suelo y del subsuelo
+           </li>
+             <font color="#FFFF00" size="+2">
+         Provocada por la filtración de sustancias en el suelo, genera alteraciones físicas y químicas en éste que hacen que por ejemplo resulte inhabitable.
+         </font>
+            <li>
+            Contaminación radiactiva
+            </li>
+              <font color="#FFFF00" size="+2">
+          Es producida por la liberación de material radiactivo y tiene efecto en cualquier superficie. 
+         </font>
+             <li>
+             Contaminación térmica
+             </li>
+               <font color="#FFFF00" size="+2">
+         Es generado por el cambio de temperatura en el entorno o en diferentes medios debido a la actividad humana.
+         </font>
+              <li>
+              Contaminación visual
+              </li>
+                <font color="#FFFF00" size="+2">
+          Se hace referencia a la alteración del medio en base a estímulos visuales que no tienen que ver con la luminosidad. 
+         </font>
+               <li>
+               Contaminación lumínica
+               </li>
+                 <font color="#FFFF00" size="+2">
+         La contaminación lumínica el elemento contaminante en sí es la emisión de luz fuera de lo que sería natural
+         </font>
+                <li>
+                Contaminación electromagnética
+                </li>
+                  <font color="#FFFF00" size="+2">
+         Se refiere a la contaminación derivada del uso de elementos eléctricos o que generen fenómenos electromagnéticos.
+         </font>
+         </ol>
+         </font>
+         <br>
+         <br>
+         <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/contaminacin_atmosfrica.jpg" alt="Contaminación atmosférica" title="Contaminación atmosférica" id="wows1_0"/></li>
+		<li><img src="data1/images/contaminacin_del_suelo_y_del_subsuelo.jpg" alt="Contaminación del suelo y del subsuelo" title="Contaminación del suelo y del subsuelo" id="wows1_1"/></li>
+		<li><img src="data1/images/contaminacin_electromagntica.jpg" alt="Contaminación electromagnética" title="Contaminación electromagnética" id="wows1_2"/></li>
+		<li><img src="data1/images/contaminacin_hdrica.jpg" alt="Contaminación hídrica" title="Contaminación hídrica" id="wows1_3"/></li>
+		<li><img src="data1/images/contaminacin_lumnica.jpg" alt="Contaminación lumínica" title="Contaminación lumínica" id="wows1_4"/></li>
+		<li><img src="data1/images/contaminacin_radiactiva.jpg" alt="Contaminación radiactiva" title="Contaminación radiactiva" id="wows1_5"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/contaminacin_trmica.jpg" alt="http://wowslider.net/" title="Contaminación térmica" id="wows1_6"/></a></li>
+		<li><img src="data1/images/contaminacin_visual.jpg" alt="Contaminación visual" title="Contaminación visual" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Contaminación atmosférica"><span><img src="data1/tooltips/contaminacin_atmosfrica.jpg" alt="Contaminación atmosférica"/>1</span></a>
+		<a href="#" title="Contaminación del suelo y del subsuelo"><span><img src="data1/tooltips/contaminacin_del_suelo_y_del_subsuelo.jpg" alt="Contaminación del suelo y del subsuelo"/>2</span></a>
+		<a href="#" title="Contaminación electromagnética"><span><img src="data1/tooltips/contaminacin_electromagntica.jpg" alt="Contaminación electromagnética"/>3</span></a>
+		<a href="#" title="Contaminación hídrica"><span><img src="data1/tooltips/contaminacin_hdrica.jpg" alt="Contaminación hídrica"/>4</span></a>
+		<a href="#" title="Contaminación lumínica"><span><img src="data1/tooltips/contaminacin_lumnica.jpg" alt="Contaminación lumínica"/>5</span></a>
+		<a href="#" title="Contaminación radiactiva"><span><img src="data1/tooltips/contaminacin_radiactiva.jpg" alt="Contaminación radiactiva"/>6</span></a>
+		<a href="#" title="Contaminación térmica"><span><img src="data1/tooltips/contaminacin_trmica.jpg" alt="Contaminación térmica"/>7</span></a>
+		<a href="#" title="Contaminación visual"><span><img src="data1/tooltips/contaminacin_visual.jpg" alt="Contaminación visual"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">http://wowslider.com/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+          </div>
+          </div>
+          <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+          <div>
+          <img src="imagenes/Earth-icon.png" width="46" height="46">
+          </div>
+          <h4>Aplicacion 4,JDCP</h4>
+          </div>
+          </div>
+           
+           
+          <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1> Consecuencias</h1>
+          </div>
+          <div data-role="content" align="center">
+          <div>
+          
+          <font color="#FF0000" size="+3">
+          <ol type="1">
+          <li>
+         Incremento de la temperatura promedio y temperaturas extremas
+          </li>
+           <font color="#FFFF00" size="+2">
+            El aumento de la concentración de gases de invernadero en el planeta hace que la temperatura promedio de la atmósfera aumente. En los últimos 100 años la temperatura promedio del planeta ha aumentado alrededor de 1.5 grados.
+          </font>
+          <li>
+         Deshielo y reducción de las capas polares
+          </li>
+           <font color="#FFFF00" size="+2">
+           El deshielo es el fenómeno por el cual una región con bajas temperaturas donde año tras año suele formarse o mantenerse una gran capa de hielo, empieza a perder densidad y volumen en esta capa de hielo por motivo de mayores temperaturas en el área.
+          </font>
+          <li>
+          Nivel del Océano y acidificación de las aguas
+          </li>
+           <font color="#FFFF00" size="+2">
+             Con el fenómeno del deshielo se evidencia otro efecto del calentamiento global, la subida del nivel de los océanos, varias organizaciones han anunciado que el nivel de los océanos ha aumentado en los últimos años alrededor de 3mm por año, cifra que se ha duplicado desde el siglo 20 cuando el aumento era de 1.6 mm por año.
+          </font>
+          <li>
+        Súper tormentas y fenómenos climáticos
+          </li>
+           <font color="#FFFF00" size="+2">
+           as súper tormentas son otro fenómeno a considerar, las hay de todo tipo, desde tifones, huracanes y tormentas eléctricas.
+          </font>
+          </ol>
+          </font>
+          <br>
+          <br>
+          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/super.jpg',1)"><img src="imagenes/desihelo.jpg" width="500" height="300" id="Image26"></a> </div>
+          </div>
+          <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+          <div>
+          <img src="imagenes/Earth-icon.png" width="46" height="46">
+          </div>
+          <h4>Aplicacion 4,JDCP</h4>
+          </div>
+          </div>
+          
+          
+          <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>Reciclaje</h1>
+          </div>
+          <div data-role="content" align="center">
+          <div>
+          <font size="+2" color="#FF0000"
+          El reciclaje es un proceso donde las materias primas que componen los materiales que usamos en la vida diaria como el papel, vidrio, aluminio, plástico, etc.,<br>
+           una vez terminados su ciclo de vida útil, se transforman de nuevo en nuevos materiales.<br>
+           El reciclaje no sólo tiene sentido desde el punto de vista ambiental,<br>
+            sino también desde el punto de vista económico.<br>
+             Al reciclar estamos ahorrando materias primas y energía en su elaboración. Por ejemplo con el reciclado de cuatro botellas de vidrio,<br>
+              lograríamos ahorrar la energía suficiente equivalente al funcionamiento de un frigorífico durante un día o el equivalente a lavar la ropa de cuatro personas.<br>
+               Cada tonelada de papel reciclado representa un ahorro de energía de 4100KWH.<br>
+               </font>
+               <br>
+               <br>
+               <img src="imagenes/recicla.jpg" width="100%" height="100%">
+          
+          </div>
+          </div>
+          <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+          <div>
+          <img src="imagenes/Earth-icon.png" width="46" height="46">
+          </div>
+          <h4>Aplicacion 4,JDCP</h4>
+          </div>
+          </div>
+          
+          
+          <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>5 Medidas que puedes emplear para combatir la contaminación en tu comunidad</h1>
+          </div>
+          <div data-role="content" align="center">
+          <div>
+         <font size="+3" color="#FF0000">
+         <ol type="I">
+         <li> Cambia las bombillas</li>
+         <font size="+2" color="#FFFF00">
+         Reemplazar una bombilla tradicional por una de bajo consumo ahorra más de 45 kilogramos de dióxido de carbono al año.
+         </font>
+          <li>Apaga la tele y el PC</li>
+          <font size="+2" color="#FFFF00">
+          Sólo con apagar la televisión, el DVD o el ordenador cuando no estén en uso evitarás que miles de kilos de CO2 salgan a la atmósfera.
+         </font>
+           <li>Conduce menos</li>
+           <font size="+2" color="#FFFF00">
+           Anda, monta en bicicleta, usa el transporte público. Ahorrarás 30 gramos de CO2 por cada 4,5 kilómetros que no conduzcas.
+         </font>
+            <li> Revisa los neumáticos</li>
+            <font size="+2" color="#FFFF00">
+            Si la presión de tus neumáticos baja 0,5 bares, tu coche consumirá un 2,5 por ciento más de combustible y, por tanto, liberará un 2,5 por ciento más de CO2.
+         </font>
+             <li> Recicla</li>
+             <font size="+2" color="#FFFF00">
+             Puedes ahorrar más de 730 kilos de CO2 al año al reciclar la mitad de la basura que se produce en casa.
+         </font>
+         </ol>
+         </font>
+         
+         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image28','','imagenes/triangulo.jpg',1)"><img src="imagenes/bombillas.jpg" width="500" height="300" id="Image28"></a></div>
+          </div>
+          <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+          <div>
+          <img src="imagenes/Earth-icon.png" width="46" height="46">
+          </div>
+          <h4>Aplicacion 4,JDCP</h4>
+          </div>
+          </div>   
+     </body>
+     </html>
+     
