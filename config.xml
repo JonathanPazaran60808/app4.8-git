@@ -26,7 +26,7 @@ Cruz Pazaran Jonathan Daniel
  
   <!--Para accesar a paginas de internet-->
  <allow-intent href="https://*/*/*/*/*"/>
- <access origin="https://*//*/*/*/*"/>
+ <access origin="https://*/*/*/*/*"/>
  <allow-intent href="http://*/*/*/*/*"/>
  <access origin="http://*/*/*/*/*"/>
  <plugin name="cordova-plugin-whitelist" source="npm"/> 
